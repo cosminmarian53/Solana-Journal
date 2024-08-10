@@ -68,7 +68,13 @@ export function UiLayout({
       </div>
       <footer className="footer footer-center p-4 bg-base-300 text-base-content">
         <aside>
-          <p>Made with 💖</p>
+          <p className="text-xl">
+            Made with 💖 by <br></br>
+            <a href="https://github.com/cosminmarian53">
+              cosminmarian53
+            </a> and <a href="https://github.com/elisamarina">elisamarina</a>
+            <a></a>
+          </p>
         </aside>
       </footer>
     </div>

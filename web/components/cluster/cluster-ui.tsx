@@ -23,7 +23,7 @@ export function ExplorerLink({
       href={getExplorerUrl(path)}
       target="_blank"
       rel="noopener noreferrer"
-      className={className ? className : `link font-mono text-black`}
+      className={className ? className : `link font-mono`}
     >
       {label}
     </a>

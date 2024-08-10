@@ -130,7 +130,7 @@ export function AccountTokens({ address }: { address: PublicKey }) {
       <div className="justify-between">
         <div className="flex justify-between">
           <h2 className="text-2xl font-bold">Token Accounts</h2>
-          <div className="space-x-2">
+          <div className="space-x-2 text-grey">
             {query.isLoading ? (
               <span className="loading loading-spinner"></span>
             ) : (
@@ -255,7 +255,7 @@ export function AccountTransactions({ address }: { address: PublicKey }) {
           {query.data.length === 0 ? (
             <div>No transactions found.</div>
           ) : (
-            <table className="table border-4 rounded-lg border-separate border-base-300">
+            <table className="table border-4 rounded-lg border-separate border-base-300 mb-4">
               <thead>
                 <tr>
                   <th>Signature</th>

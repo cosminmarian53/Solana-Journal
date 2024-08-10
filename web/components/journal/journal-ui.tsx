@@ -45,7 +45,7 @@ export function JournalCreate() {
       />
       <br></br>
       <button
-        className="btn btn-xs lg:btn-md btn-primary"
+        className="select-none rounded-lg bg-indigo-500 border border-gray-900 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-gray-900 transition-all hover:opacity-90 focus:ring focus:ring-gray-300 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" // Modified line
         onClick={handleSubmit}
         disabled={createEntry.isPending || !isFormValid}
       >
@@ -126,11 +126,7 @@ function JournalCard({ account }: { account: PublicKey }) {
           >
             {accountQuery.data?.title}
           </h2>
-          <p className="text-black">
-            Modified line:{''}
-            {''}
-            {accountQuery.data?.message}
-          </p>
+          <p className="text-black">{accountQuery.data?.message}</p>
           <div className="card-actions justify-around">
             <textarea
               placeholder="Update message here"
@@ -139,7 +135,7 @@ function JournalCard({ account }: { account: PublicKey }) {
               className="textarea textarea-bordered w-full max-w-xs"
             />
             <button
-              className="btn lg:btn-md btn-primary" // Modified line
+              className="select-none rounded-lg bg-indigo-500 border border-gray-900 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-gray-900 transition-all hover:opacity-90 focus:ring focus:ring-gray-300 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" // Modified line
               onClick={handleSubmit}
               disabled={updateEntry.isPending || !isFormValid}
             >
