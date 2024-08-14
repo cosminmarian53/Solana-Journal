@@ -30,7 +30,7 @@ export function UiLayout({
         <div className="flex-1">
           <Link className="btn btn-ghost normal-case text-xl" href="/">
             <div className="h-4 md:h-6" style={{}}>
-              📓 Journal
+              📓Solana Journal
             </div>
           </Link>
           <ul className="menu menu-horizontal px-1 space-x-2">
@@ -178,7 +178,7 @@ export function useTransactionToast() {
   return (signature: string) => {
     toast.success(
       <div className={'text-center'}>
-        <div className="text-lg">Transaction sent</div>
+        <div className="text-lg">💰Transaction sent✅</div>
         <ExplorerLink
           path={`tx/${signature}`}
           label={'View Transaction'}

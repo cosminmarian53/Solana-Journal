@@ -25,6 +25,7 @@ export function AccountBalance({ address }: { address: PublicKey }) {
         className="text-5xl font-bold cursor-pointer"
         onClick={() => query.refetch()}
       >
+        Your account's balance💵 is{' '}
         {query.data ? <BalanceSol balance={query.data} /> : '...'} SOL
       </h1>
     </div>
@@ -58,7 +59,7 @@ export function AccountBalanceCheck({ address }: { address: PublicKey }) {
             mutation.mutateAsync(1).catch((err) => console.log(err))
           }
         >
-          Request Airdrop
+          Request Airdrop💲💲
         </button>
       </div>
     );
@@ -96,20 +97,20 @@ export function AccountButtons({ address }: { address: PublicKey }) {
           className="btn btn-xs lg:btn-md btn-outline"
           onClick={() => setShowAirdropModal(true)}
         >
-          Airdrop
+          Airdrop💲
         </button>
         <button
           disabled={wallet.publicKey?.toString() !== address.toString()}
           className="btn btn-xs lg:btn-md btn-outline"
           onClick={() => setShowSendModal(true)}
         >
-          Send
+          Send↗️
         </button>
         <button
           className="btn btn-xs lg:btn-md btn-outline"
           onClick={() => setShowReceiveModal(true)}
         >
-          Receive
+          Receive⬅️
         </button>
       </div>
     </div>

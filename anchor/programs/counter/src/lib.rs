@@ -2,7 +2,7 @@
 
 use anchor_lang::prelude::*;
 
-declare_id!("2K12Sj4LaCKpC9W6kT87yKyKBLY79Ms5NKmtpjwMbazj");
+declare_id!("HdPYYrtUtXVB1HRENVxBgwAaAsaY25XC4hcHmjnvMqWJ");
 
 #[program]
 mod journal {
